@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #2c3e50;
+            color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background: #d6eaf8;
+            transition: 0.3s;
+        }
+
+        .high {
+            color: green;
+            font-weight: bold;
+        }
+
+        .medium {
+            color: orange;
+        }
+
+        .low {
+            color: red;
+        }
+
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Performance Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Palvi</td>
+                <td>B.Tech</td>
+                <td class="high">90</td>
+                <td class="high">Excellent</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Rahul</td>
+                <td>BCA</td>
+                <td class="medium">75</td>
+                <td class="medium">Good</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Anjali</td>
+                <td>BBA</td>
+                <td class="low">50</td>
+                <td class="low">Needs Improvement</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="index.html" class="btn">Back to Home</a>
+</div>
+
+</body>
+</html>
